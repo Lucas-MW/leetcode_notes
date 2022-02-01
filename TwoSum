@@ -1,9 +1,9 @@
-LOGIC: hashmap
-
+LOGIC: hashmap O(n)  or two for loops O(n^2)
 
 create a empty dict
 for index and number in list 
 if the number in the dict
-return list(index of (sum - number) and index)
+return list(index of (target - number) and index)
 if the number not in dict
 we add the number into dict with index
+
