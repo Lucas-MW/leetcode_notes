@@ -1,0 +1,12 @@
+1: recursion  O(n)
+list(left tree and root and right tree)
+
+2: iterative O(n)
+while current is not none and stack is not empty
+while current is not none
+move current into stack
+move current to left
+after current reach the bottom of left tree 
+pop from stack and add that to the result
+and move current to the right
+and return
