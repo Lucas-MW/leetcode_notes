@@ -7,6 +7,6 @@ while current is not none
 move current into stack
 move current to left
 after current reach the bottom of left tree 
-pop from stack and add that to the result
+make current to pop item from stack and add item value to the result
 and move current to the right
 and return
