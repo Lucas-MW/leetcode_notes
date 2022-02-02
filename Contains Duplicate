@@ -1,0 +1,8 @@
+O(n)
+
+create empty set to check duplicate
+loop through each number
+check the num is in the checker
+if there is num then return True
+else add num into checker
+return
