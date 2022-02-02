@@ -1,0 +1,6 @@
+O(n)
+loop through the prices
+maximum profit = max (price - min_price , maximum profit)
+if price is less than min price
+price is going to be min price
+return
