@@ -1,0 +1,11 @@
+O(n) 
+#**********Kadane’s Algorithm*********
+iterative dynamic programming algorithm. 
+calculates the maximum sum subarray ending at a particular position by using the maximum sum subarray ending at the previous position.
+
+loop through each nums 
+add each num to subarray sum
+largest sum = max(subarray sum , largest sum)
+if subarray less than 0 
+make subarray to 0
+return
