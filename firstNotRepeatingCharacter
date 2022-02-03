@@ -1,0 +1,15 @@
+O(n)
+use hashmap
+loop through characters
+if character in checker
+checker count increase
+else checker[character] = 1
+
+loop through checker find which count is 1 return
+
+
+*****************************
+loop through each character
+if index of first occren of c(index) == index of last occren of c(rindex):
+return
+*****************************
