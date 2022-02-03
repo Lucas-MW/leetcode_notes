@@ -1,0 +1,11 @@
+O(n)
+we also need to find min val because of negative numbers
+edge case: when there is a 0 break our algo
+
+loop through each number
+if number is 0 so edge case occur:
+we set min and max to 1 ( since we are going to num * min and num * max so product dont change)
+min = min of number , number * min , number * max
+max = max of number , number * min(min going to change because previous min value, so need a value to store) , numebr * max
+result is max(max , result)
+return
