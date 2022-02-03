@@ -1,0 +1,16 @@
+O(n)
+
+"""
+        i = 0 [1,2,3,4] --> pre = 1,        post = 2 x 3 x 4
+        i = 1 [1,2,3,4] --> pre = 1 x 1,    post = 3 x 4
+        i = 2 [1,2,3,4] --> pre = 1 x 2,    post = 1 x 4
+        i = 3 [1,2,3,4] --> pre = 1 x 2 x 3 post = 1
+        """
+
+loop through i to before last element ( left to right)
+append updated prefix products into result
+
+loop back ward from len -1 to 0 ( right to left)
+change the result index value to prefix * postfix
+update postfix
+return result
