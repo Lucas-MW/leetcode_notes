@@ -1,6 +1,6 @@
 O(n)
 
-create empty set to check duplicate
+create empty set to check duplicate  ( empty list append looks like slower)
 loop through each number
 check the num is in the checker
 if there is num then return True
