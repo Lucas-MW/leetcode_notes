@@ -1,0 +1,27 @@
+O(n*2) space: O(1)
+
+make a variables for direction
+left , right, top , bottom
+since its n x n
+left 0 , right len(a) - 1 = top , bottom
+while left < right:
+loop through right - left (3 elements in array 2 rotations outter move):
+****************************************************************************************************
+#if we move the value clockwise we need too many temp values to save previous values
+#solution is make a just one variable to save top left value and move the value in reverse clockwise
+****************************************************************************************************
+save the first element into temp variable which is matrix[top][left + i]
+a[top][left + i] = a[bottom - i][left]
+a[bottom - i][left] = a[bottom][right - i]
+a[bottom][right - i] = a[top + i][right]
+a[top + i][right] = temp
+
+r -= 1
+l += 1
+
+
+other solution O(n*2):
+reverse matrix first so the topleft and bottom right is the on the right position
+for i in range(len(matrix))
+for j in range(i)
+and swap   [i][j] to [j][i] so on
