@@ -1,3 +1,5 @@
+*sorted() creates a new list so increases space, instead use sort()
+
 If input array is sorted then
     - Binary search
     - Two pointers
