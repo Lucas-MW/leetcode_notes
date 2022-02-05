@@ -1,0 +1,4 @@
+O(1) extra space complexity and O(n) runtime complexity
+loop through array length
+if num in array
+continue else return
