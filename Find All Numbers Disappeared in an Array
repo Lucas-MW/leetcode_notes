@@ -1,0 +1,6 @@
+O(n)
+make array sorted
+loop through 1 to array length + 1
+if i not in sorted array
+append to list
+return
