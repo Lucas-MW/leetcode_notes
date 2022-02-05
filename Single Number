@@ -1,0 +1,7 @@
+O(n)
+same logic as valid parentheses
+make a stack
+loop through
+if i in stack remove it from stack
+else append
+return stack
