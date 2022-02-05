@@ -1,0 +1,24 @@
+dynamic programming always think about top -> down or bottom -> up
+Time complexity : O(n)O(n). Single loop upto nn.
+
+Space complexity : O(n)O(n). dpdp array of size nn is used.
+
+base case:
+we climb first stair with only one way
+we climb second stair with two way , 1 + 1 , or jump to 2 step
+so step[0] = 1 , step[1] = 2
+loop through 3 stair to end
+step[i] = previous stair + before previous star
+return step[input]
+
+better solution with fibonacci:
+Time complexity : O(n)
+Space complexity : O(1)O(1). Constant space is used.
+
+first step = 1
+second step = 2
+loop through
+temp = first + second
+first = second
+second = temp
+return second
