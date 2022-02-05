@@ -1,7 +1,14 @@
-O(n)
+hashmap O(n)  O(n) space
+make a default dict
+loop through nums increase frequency
+loop through dict check if dict value == 1
+return 
+
+O(n^2) Space complexity : O(n)O(n). We need a list of size nn to contain elements in nums.
 same logic as valid parentheses
 make a stack
 loop through
 if i in stack remove it from stack
 else append
 return stack
+
