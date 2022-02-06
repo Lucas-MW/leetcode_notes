@@ -1,11 +1,10 @@
-O(n) 
+O(n)  O(1) space
 #**********Kadane’s Algorithm*********
 iterative dynamic programming algorithm. 
 calculates the maximum sum subarray ending at a particular position by using the maximum sum subarray ending at the previous position.
 
-loop through each nums 
-add each num to subarray sum
-largest sum = max(subarray sum , largest sum)
-if subarray less than 0 
-make subarray to 0
+largest and subarray sum is first number of array
+loop through each nums from index 1:
+find max from num and subarray_sum
+find max from subarray_sum and largest_sum
 return
