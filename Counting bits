@@ -1,0 +1,8 @@
+O(n) time O(1) space
+
+make default result list to n + 1 length
+loop through n + 1
+convert each number to bin
+and make it str and count how many 1's in bin
+store the number into result[i]   *** we can do it one line***
+return result
