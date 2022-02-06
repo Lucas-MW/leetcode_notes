@@ -1,0 +1,20 @@
+# Floyd's Cycle Finding Algorithm
+O(n) time O(1) space
+slow = head
+fast = slow.next
+while they r not same
+if fast and fast.next are none
+return False
+slow = slow.next
+fast = fast.next.next
+return True
+
+
+O(n) time O(n) space
+use hashtable
+loop through 
+if temp in hashtable
+return True
+add temp into hashtable
+temp = temp.next
+return False
