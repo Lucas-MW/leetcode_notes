@@ -1,0 +1,20 @@
+O(n) time O(1) space
+
+same logic as linked list cycle
+make slow and fast = head
+while fast and fast.next not None
+slow move one step
+fast move two step
+return slow
+
+O(n) time O(n) space
+use loop count linked list
+and loop though again stop when it reaches middle
+return
+
+O(n) time O(n) space
+use array
+make linked list to array
+and while array[-1].next
+append arr with array[-1].next
+return array[len(array) // 2]
