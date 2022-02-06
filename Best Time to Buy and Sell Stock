@@ -1,4 +1,7 @@
-O(n)
+Time complexity: O(n). Only a single pass is needed.
+
+Space complexity: O(1). Only two variables are used
+
 set min price to first element of array
 loop through the prices
 maximum profit = max (price - min_price , maximum profit)
