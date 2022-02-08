@@ -1,0 +1,12 @@
+Time complexity : O(n). Assume that nn is the list's length, the time complexity is O(n)O(n).
+Space complexity : O(1).
+need 3 pointers
+prev , curr , temp
+while curr:
+temp  = curr.next
+curr.next = prev
+prev = curr
+curr = temp
+after loop
+head = prev
+return head
