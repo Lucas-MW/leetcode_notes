@@ -1,0 +1,17 @@
+Time complexity : O(n), where n is the number of nodes in the Linked List.
+Space complexity : O(n) , add them to the array list
+
+let the linked list val to list
+return list is equal to the reverse list
+
+Time complexity : O(n), where n is the number of nodes in the Linked List.
+Space complexity : O(1) , in place modify linked list
+
+use floyd cycle algorithm 
+find mid point
+from mid point we reverse linklist
+1->2->3->2->1 become 1->2  1->2->3
+while tail:
+if head data != tail data return false
+else move next
+return True
