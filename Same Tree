@@ -20,7 +20,7 @@ iteration:
             if t1 == None and t2 == None: 
                 continue
             if t1 == None or t2 == None: 
-                return t1 == t2
+                return False
             if t1.val != t2.val: 
                 return False
             stack.append((t1.left, t2.left))
