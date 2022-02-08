@@ -1,0 +1,17 @@
+Time complexity: O(N)
+
+Space complexity: O(1), it's a constant space solution.
+
+keep track of prev node
+while loop:
+if curr value == val:
+also have to check if it is first val then prev.next not working since prev is none from start
+if prev is none:
+move head
+else:
+connect prev to curr next
+else:
+prev = curr
+
+curr = curr.next
+return head
