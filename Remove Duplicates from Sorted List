@@ -1,0 +1,14 @@
+Time complexity : O(n). the total run time is O(n), where nn is the number of nodes in the list.
+
+Space complexity : O(1). No additional space is used.
+
+need two pointer
+while curr and curr.next
+temp = curr.next
+if curr val and temp val same:
+curr.next = temp.next
+temp = curr.next
+else
+curr = curr.next
+temp = temp.next
+return head
