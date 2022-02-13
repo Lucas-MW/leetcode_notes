@@ -1,0 +1,7 @@
+#O(n) time O(m) space
+
+check m x n is equal to length of orginal
+loop through m rows
+append orginal index of 0 to n - 1 --> first row n to 2 * n - 1 --< second row so on... to result   (result.append(original[n * i : (i + 1) * n])
+return result
+
