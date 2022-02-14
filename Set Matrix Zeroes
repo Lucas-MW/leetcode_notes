@@ -2,12 +2,12 @@ Time Complexity: O(M×N) where M and N are the number of rows and columns respec
 
 Space Complexity: O(M + N)
 
-loop though m x n 
+loop though r x c 
 if there is a 0
 add i into row set()
 add j into col set()
 
-loop through m x n
+loop through r x c
 if i in row or j in col
 matrix[i][j] = 0
 
