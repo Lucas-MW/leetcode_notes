@@ -1,0 +1,9 @@
+O(n) O(1)
+
+#Mark Visited Elements in the Input Array itself   
+since there are multiple duplicates num
+that means each nums[abs(num) - 1] index will visit twice 
+so when i first visited index we mark it with negative of num
+so next time we visit the same index check if its negative then
+we visited before we add that num into result
+                
