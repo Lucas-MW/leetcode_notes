@@ -1,0 +1,32 @@
+Time O(m* n)  space O(1)
+result = []
+        left = top = 0
+        r = len(matrix) 
+        c = len(matrix[0])
+        right = len(matrix[0])
+        bot = len(matrix)
+        
+        while len(result) < r * c:
+            for i in range(left , right):       #Traverse from left to right.
+                result.append(matrix[top][i])   
+            top += 1    #update top
+            
+            for i in range(top , bot):       #Traverse downwards.
+                result.append(matrix[i][right - 1])
+            right -= 1  #update right
+            
+            # Make sure we are now on a different row.
+            if top != bot:
+                 # Traverse from right to left.
+                for i in range(right - 1 , left - 1 , -1):
+                    result.append(matrix[bot - 1][i])
+            bot -= 1  #update bot
+            
+            # Make sure we are now on a different column.
+            if left != right:
+             # Traverse from right to left.
+                for i in range(bot - 1 , top - 1, -1):
+                    result.append(matrix[i][left])
+            left += 1  #update right
+            
+        return result
