@@ -1,0 +1,14 @@
+Time Complexity: O(M×N) where M and N are the number of rows and columns respectively.
+
+Space Complexity: O(M + N)
+
+loop though m x n 
+if there is a 0
+add i into row set()
+add j into col set()
+
+loop through m x n
+if i in row or j in col
+matrix[i][j] = 0
+
+return matrix
