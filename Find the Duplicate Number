@@ -1,0 +1,17 @@
+0(n) time O(1) space
+
+use floyed cycle detection algo
+
+slow and fast to first element of array
+
+while true
+slow move one step   slow = nums[slow]
+fast move two step    fast = nums[nums[fast]]
+if slow == fast we break the loop since we found cycle entry
+
+now we move slow to starting point
+while slow != fast
+slow move one step
+fast move one step
+
+after while loop return slow
