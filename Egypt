@@ -1,0 +1,13 @@
+BaekJun 4153:
+
+
+while(True):
+    data = list(map(int, input().split()))
+    if(min(data) == 0):
+        break
+    x, z = min(data) , max(data)
+    y = sum(data) - x - z
+    if (x**2 + y ** 2 == z **2):
+        print("right")
+    else:
+        print("wrong")
