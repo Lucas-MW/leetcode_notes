@@ -1,0 +1,11 @@
+N = int(input())
+L = []
+for p in input().split():
+	L.append(int(p))
+
+M = max(L)
+point_sum = 0
+for p in L:
+	point_sum += (p / M) * 100
+
+print(point_sum / N)
